@@ -13,7 +13,7 @@ import "../css/main/TopRecommendation.css"
 import "../css/main/GenreList.css"
 
 // 최상단 추천 영화 섹션 - 자동으로 슬라이딩되는 배너 컴포넌트
-const TopRecommendation = ({ movies,onMovieSelect }) => {
+const TopRecommendation = ({ movies, onMovieSelect }) => {
     // 현재 보여줄 영화의 인덱스 상태 관리
     const [currentIndex, setCurrentIndex] = useState(0);
   
@@ -200,6 +200,7 @@ const TopRecommendation = ({ movies,onMovieSelect }) => {
   
     return (
       <div className="main-page">
+        <div >
         <header className="main-header">
           <img src={logo} className="main-logo" onClick={handleLogoClick}/>
             {/* 영화 검색 입력창 */}
@@ -219,6 +220,7 @@ const TopRecommendation = ({ movies,onMovieSelect }) => {
             )}
         </header>
         <div>
+          {/* 네비게이션 바 */}
           <nav className="nav-bar">
             {genres.map((genre) => (
               <button
@@ -230,6 +232,7 @@ const TopRecommendation = ({ movies,onMovieSelect }) => {
               </button>
             ))}
           </nav>
+        </div>
         </div>
 
         {/* 검색 결과 또는 기본 영화 리스트 조건부 렌더링 */}
@@ -261,6 +264,7 @@ const TopRecommendation = ({ movies,onMovieSelect }) => {
               movies={topRatedMovies} 
               onMovieSelect={handleMovieSelect} 
             />
+            {/* 콘텐츠 */}
             <div className="content">
             {genres.map((genre) => (
               <div
