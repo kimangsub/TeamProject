@@ -1,0 +1,48 @@
+.main-header {
+  display: flex;
+  justify-content: space-between; /* 로고와 검색창, 버튼을 양쪽 끝으로 정렬 */
+  align-items: center; /* 수직 정렬 */
+  height: 60px; /* 헤더 높이 */
+}
+
+.main-header h1 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.main-header input {
+  margin: 20px;
+  justify-content: center;
+  width: 500px;
+}
+
+.search-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: 250px;
+  height: auto;
+  cursor: pointer;
+}
+
+
+.main-header button {
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #d81f26;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
+  /* 버튼의 위치를 flexbox로 제어 */
+}
+
+.main-header button:hover {
+  background-color: #a3151d;
+}
+
