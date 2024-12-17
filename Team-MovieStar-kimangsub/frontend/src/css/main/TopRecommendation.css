@@ -3,8 +3,9 @@
     position: relative;
     width: 100%;
     height: 400px;
-    overflow: hidden;
-    margin: 20px 0;
+    overflow: visible;
+    /* margin: 20px 0; */
+    margin-top: 200px;
   }
   
   /* 최상단 추천 영화 슬라이드 */
@@ -20,7 +21,7 @@
   
   /* 활성 슬라이드 */
   .top-recommendation.active {
-    /* 추가---------------------------------------------------- */ display: block;
+
     left: 0; /* 화면 안으로 이동 */
     opacity: 1;
   }
@@ -62,3 +63,6 @@
     max-width: 80%; /* 가로 크기 조절 */
     margin: 0 auto; /* 가운데 정렬 */
   }
+
+
+  
